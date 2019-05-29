@@ -115,8 +115,8 @@ Shader "Roystan/Grass"
 
 	#define BLADE_SEGMENTS 3
 
-	// Geometry program that takes in a single vertex and outputs a blade
-	// of grass at that vertex's position, aligned to the vertex's normal.
+	// Geometry program that takes in a single triangle and outputs a blade
+	// of grass at that triangle first vertex position, aligned to the vertex's normal.
 	[maxvertexcount(BLADE_SEGMENTS * 2 + 1)]
 	void geo(triangle vertexOutput IN[3], inout TriangleStream<geometryOutput> triStream)
 	{
