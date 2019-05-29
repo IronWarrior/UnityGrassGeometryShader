@@ -118,7 +118,7 @@ Shader "Roystan/Grass"
 	// Geometry program that takes in a single vertex and outputs a blade
 	// of grass at that vertex's position, aligned to the vertex's normal.
 	[maxvertexcount(BLADE_SEGMENTS * 2 + 1)]
-	void geo(point vertexOutput IN[1], inout TriangleStream<geometryOutput> triStream)
+	void geo(triangle vertexOutput IN[3], inout TriangleStream<geometryOutput> triStream)
 	{
 		float3 pos = IN[0].vertex.xyz;
 
