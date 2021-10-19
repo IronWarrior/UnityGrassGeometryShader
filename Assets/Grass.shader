@@ -24,7 +24,7 @@ Shader "Roystan/Grass"
 
 	CGINCLUDE
 	#include "UnityCG.cginc"
-	#include "Autolight.cginc"
+	#include "AutoLight.cginc"
 	#include "Shaders/CustomTessellation.cginc"
 	
 	struct geometryOutput
